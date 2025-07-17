@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
-    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
-    "test": "cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts test",
-    "eject": "react-scripts eject"
+  "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
+  "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
+  "test": "cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts test",
+  "eject": "react-scripts eject",
+  "postinstall": "chmod +x node_modules/.bin/react-scripts"
   },
   "dependencies": {
     "axios": "^1.9.0",
